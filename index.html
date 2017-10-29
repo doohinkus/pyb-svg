@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SnapChat InkScape</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <style>
+  /*Styles*/
+    html{
+      height: 100%;
+    }
+    body{
+      height: 100%;
+      background-color: #FFFC00;
+    }
+    h1{
+      font-family: 'Pacifico', cursive;
+      /*background: -webkit-linear-gradient(#fff, #333);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;*/
+      color: #333;
+      /*text-shadow: 2px 2px #333;*/
+    }
+    .ghost-container{
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .ghost{
+      width: 25%;
+      margin: auto;
+      display: block;
+      animation: bounce 2.5s ease-in-out infinite;
+    }
+/*Animation*/
+    @keyframes bounce {
+      0% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+      50% {
+        -moz-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="ghost-container">
+      <h1>Rafael's Snapchat Ghost</h1>
+      <img src="./img/ghost.svg" class="ghost" />
+    </div>
+  </body>
+</html>
