@@ -2,9 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>SnapChat InkScape</title>
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <style>
+    /*For IE mobile devices*/
+    @-ms-viewport{
+      width: device-width;
+    }
   /*Styles*/
     html{
       height: 100%;
@@ -15,11 +21,7 @@
     }
     h1{
       font-family: 'Pacifico', cursive;
-      /*background: -webkit-linear-gradient(#fff, #333);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;*/
       color: #333;
-      /*text-shadow: 2px 2px #333;*/
     }
     .ghost-container{
       height: 70%;
